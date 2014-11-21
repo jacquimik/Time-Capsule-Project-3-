@@ -1,0 +1,41 @@
+<% if @user.errors.any? %>
+  <div id="error_explanation">
+    <h4><%= pluralize(@user.errors.count, "error") %> prohibited
+      you from successfully updating your login details:</h4>
+    <ul>
+    <% @user.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+    </ul>
+  </div>
+<% end %>
+
+
+<div class="form">
+  <%= form_for @user do |f| %>
+    <%= f.label :firstname %>
+    <%= f.text_field :firstname, :autofocus => true %>
+
+    <%= f.label :lastname %>
+    <%= f.text_field :lastname %>
+   
+    <%= f.label :email %>
+    <%= f.email_field :email %>
+
+    <%= f.label :email_confirmation %>
+    <%= f.email_field :email_confirmation %>
+  
+    <%= f.label :password %>
+    <%= f.password_field :password %>
+   
+    <%= f.label :password_confirmation %>
+    <%= f.password_field :password_confirmation %><br>
+    
+  <label>
+    <%= f.submit %>
+  </label>
+  <% end %>
+</div>
+
+
+
