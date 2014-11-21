@@ -9,11 +9,12 @@ class SessionsController < ApplicationController
 		user = User.where(:email => params[:email]).first
 		if user.present? && user.authenticate(params[:password])
 			session[:user_id] = user.id
-			redirect_to loggedin_path	
+
+			redirect_to loggedin_path
 		else 
 			redirect_to new_session_path
-			binding.pry
 		end
+
 	end
 
 #logout
@@ -22,4 +23,3 @@ class SessionsController < ApplicationController
 		redirect_to root_path
 	end
 end
-
