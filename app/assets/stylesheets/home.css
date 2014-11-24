@@ -1,0 +1,45 @@
+
+
+.top {
+	background-image: url("http://i.imgur.com/QA6LH7g.jpg?1");
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-position:center;
+	height: 600px;
+	margin: auto;
+
+}
+
+.path-container {
+	position: relative;
+}
+
+.row {
+	text-align: center;
+	margin: auto;	
+}
+
+.mainpage-button {
+	margin: auto;
+}
+
+.mainpage-button a {
+	margin-top: 350px;
+	position: relative;
+	width: 250px;
+}
+
+.mainpage-button-1 {
+	text-align: right;
+}
+
+.mainpage-button-2 {
+	text-align: left;
+}
+
+.main {
+	font-family: 'Architects Daughter', cursive;
+	font-size: 80px;
+	text-align: center;
+	font-weight: bold
+}

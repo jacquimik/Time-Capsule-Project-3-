@@ -12,4 +12,13 @@
  *
  *= require_tree .
  *= require_self
+ *= require foundation_and_overrides
  */
+
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+@import url(http://fonts.googleapis.com/css?family=Architects+Daughter);
+
+html {
+	width: 100%
+}
+

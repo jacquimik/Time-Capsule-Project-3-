@@ -1,0 +1,13 @@
+<h2>Child:</h2>
+  <p>Firstname: <%= @child.firstname %><p>
+  <p>Lastname: <%= @child.lastname %></p>
+  <p>Gender: <%= @child.gender %></p>
+  <p>Date of Birth: <%= @child.date_of_birth %></p>
+  <p>Eye Color: <%= @child.eye_color %></p>
+  <p>Image: <%= @child.image %></p>
+
+<%= link_to 'Events', child_events_path(@child) %>
+
+<br />
+
+<%= link_to 'Create New Event', new_child_event_path(@child) %>

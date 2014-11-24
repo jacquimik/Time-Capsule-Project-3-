@@ -26,6 +26,8 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 
 gem 'bcrypt'
+gem 'foundation-rails'
+gem 'geocoder'
 
 group :development do
   gem 'pry-rails'
@@ -48,6 +50,8 @@ group :test do
   gem 'rspec-rails'
   gem 'factory_girl_rails'
 end	
+
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

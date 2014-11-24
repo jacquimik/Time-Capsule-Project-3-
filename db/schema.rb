@@ -34,6 +34,7 @@ ActiveRecord::Schema.define(version: 20141121005606) do
     t.string   "name"
     t.datetime "date"
     t.string   "location"
+    t.text     "image"
     t.text     "description"
     t.integer  "child_id"
     t.float    "longitude"

@@ -1,0 +1,41 @@
+<% if @child.errors.any? %>
+  <div id="error_explanation">
+    <h4><%= pluralize(@child.errors.count, "error") %> prohibited
+      you from successfully updating your child details:</h4>
+    <ul>
+      <% @child.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+
+<div class="form">
+  <%= form_for @child do |f| %>
+    <%= f.label :firstname %>
+    <%= f.text_field :firstname, :autofocus => true %>
+
+    <%= f.label :middlename %>
+    <%= f.text_field :middlename %>
+   
+    <%= f.label :lastname %>
+    <%= f.text_field :lastname %>
+
+    <%= f.label :date_of_birth %>
+    <%= f.date_field :date_of_birth %>
+  
+    <%= f.label :gender %>
+    <%= f.text_field :gender %>
+   
+    <%= f.label :eye_color %>
+    <%= f.text_field :eye_color %><br>
+
+    <%= f.label :image %>
+    <%= f.file_field :image %><br>
+    
+    <label>
+      <%= f.submit %>
+    </label>
+  <% end %>
+</div>
+

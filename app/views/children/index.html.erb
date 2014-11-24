@@ -1,0 +1,18 @@
+<h2>Displaying all Children </h2>
+<ul>
+  <li>
+		<% @children.each do |child| %>        
+      <%= image_tag child.image %>
+     
+      <%= link_to child.firstname, child %>
+    <% end %>
+  </li>
+</ul>
+
+<%= link_to 'Create New Child', new_child_path %>
+
+
+
+
+
+

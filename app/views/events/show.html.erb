@@ -1,0 +1,19 @@
+<h2>
+	<%# binding.pry %>
+	<p>
+		  <%= @event["name"] %>
+	</p>
+
+	<p>
+		   <%= @event["date"] %>
+	</p>
+
+	<p>
+  <%= @event["location"] %>	</p>
+
+
+<%= image_tag "http://maps.google.com/maps/api/staticmap?size=450x300&sensor=false&zoom=16&markers=#{@event.latitude}%2C#{@event.longitude}" %>
+
+</h2>
+
+<%= link_to 'Back to events', child_events_path(@child) %>
