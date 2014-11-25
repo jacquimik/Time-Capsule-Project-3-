@@ -12,26 +12,37 @@
   </head>
 
 	<body>
-			
-		<header>
-			<nav class="top-bar" data-topbar role="navigation">
-				<section class="top-bar-section">
-				  <ul class="left">
-						<li><%= link_to 'Home', root_path %></li>
-						<li><%= link_to 'About', about_path %></li>
-						<li><%= link_to 'FAQ', faq_path %></li><li>
-						<% if @current_user.present? %>
-							<li><%= link_to 'Show All Children', children_path %></li>
-							<li><%= link_to 'Edit profile', edit_user_path(@current_user) %></li>
-							<li><%= link_to "Sign out #{@current_user.firstname}", session_path, :method => :delete %></li>
-						<% else %>
-							<li><%= link_to 'Sign up', new_user_path %></li>
-							<li><%= link_to 'Login', new_session_path %></li>
-						<% end %>
-					</ul>
-				</section>
-			</nav>
-		</header>
+		<nav class="top-bar" data-topbar role="navigation">
+		  <ul class="title-area">
+		    <li class="name">
+		      <h1><a href="#">My Site</a></h1>
+		    </li>
+		     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+		    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+		  </ul>
+
+		  <section class="top-bar-section">
+		    <!-- Right Nav Section -->
+		    <ul class="right">
+		      <li class="active">
+			      <% if @current_user.present? %>
+						<li><%= link_to 'Show All Children', children_path %></li>
+						<li><%= link_to 'Edit profile', edit_user_path(@current_user) %></li>
+						<li><%= link_to "Sign out #{@current_user.firstname}", session_path, :method => :delete %></li>
+					<% else %>
+						<li><%= link_to 'Sign up', new_user_path %></li>
+						<li><%= link_to 'Login', new_session_path %></li>
+					<% end %>
+		    </ul>
+
+		    <!-- Left Nav Section -->
+		    <ul class="left">
+		      <li><%= link_to 'Home', root_path %></li></li>
+		      <li><%= link_to 'About', about_path %></li>
+		      <li><%= link_to 'FAQ', faq_path %></li><li>
+		    </ul>
+		  </section>
+		</nav>
 
 		<div id="main">
 			<div class="container">

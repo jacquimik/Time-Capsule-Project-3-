@@ -1,13 +1,12 @@
 
 
 .top {
-	background-image: url("http://i.imgur.com/QA6LH7g.jpg?1");
+	background-image: url("http://designlobby.co.uk/assets/img/masthead-park.jpg");
 	background-repeat:no-repeat;
 	background-size: cover;
 	background-position:center;
 	height: 600px;
 	margin: auto;
-
 }
 
 .path-container {
@@ -16,7 +15,8 @@
 
 .row {
 	text-align: center;
-	margin: auto;	
+	margin: auto;
+/*	padding-top: 50px;	*/
 }
 
 .mainpage-button {
@@ -24,9 +24,9 @@
 }
 
 .mainpage-button a {
-	margin-top: 350px;
+	margin-top: 20px;
 	position: relative;
-	width: 250px;
+	width: 225px;
 }
 
 .mainpage-button-1 {
@@ -38,8 +38,32 @@
 }
 
 .main {
-	font-family: 'Architects Daughter', cursive;
-	font-size: 80px;
+	font-family: 'Open Sans';
+	font-size: 50px;
 	text-align: center;
-	font-weight: bold
+	font-weight: bold;
+	color: white;
+}
+
+.main2 {
+	font-family: 'Open Sans';
+	font-size: 20px;
+	text-align: center;
+	font-weight: bold;
+	color: white;
+}
+
+.text {
+	padding-top: 140px;
+}
+
+.button {
+	background-color: darkorange;
+}
+
+.button:hover {
+	background-color: darkorange;
+	background-color: white;
+	color: black;
+	border: 2px solid darkorange;
 }
