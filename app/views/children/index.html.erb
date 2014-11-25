@@ -1,17 +1,28 @@
-<h2>Displaying all Children </h2>
-<ul>
-  <li>
-		<% @children.each do |child| %>        
-      <%= image_tag child.image %>
-     
-      <%= link_to child.firstname, child %>
-    <% end %>
-  </li>
-</ul>
 
 <%= link_to 'Create New Child', new_child_path %>
 
 
+<div class="child-index-heading">
+  <h2>View all children</h2>
+  <p>Stay on trend with the latest looks from Sydney Sister</p>
+		<div class="child-index">
+		  <ul>
+		    <li>
+					<% @children.each do |child| %>
+		    		<div class="child_box">
+		        	<%= image_tag child.image %>
+		      		<h4><%= link_to child.firstname, child_path(child) %></h4>
+		      		<p class="child-info">
+		        		<%= child.firstname %></br>
+		        		<%= child.lastname %>
+	       		
+	       		</p>
+	      	</div>
+	      <% end %>
+	    </li>
+	  </ul>
+	</div>
+</div>
 
 
 

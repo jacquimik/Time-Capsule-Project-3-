@@ -1,9 +1,9 @@
 /*------------------------------------
  timeline styles
 ------------------------------------*/
-.path-container {
+/*.path-container {
   margin-top: 50px;
-  margin-bottom: 70px;
+  margin-bottom: 70px;*/
 }
 .path-container .path-item h1 {
   text-align: center;
@@ -33,17 +33,17 @@
   z-index: 2;
 }
 .path-container .path-item .circle.circle-left {
-  left: -7px;
+  left: 11px;
 }
 .path-container .path-item .circle.circle-right {
-  right: -10px;
+  right: 11px;
 }
 .path-container .line {
   background: #ddd;
   width: 2px;
   bottom: 0;
   position: absolute;
-  top: 160px;
+  top: 243px;
   left: 50%;
   z-index: 0;
   height: 1164px;

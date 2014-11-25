@@ -1,4 +1,14 @@
+.circle-left img {
+	border-radius: 100%;
+}
 
+.circle-right img {
+	border-radius: 100%;
+}
+
+.circle-left {
+	border-radius: 100%;
+}
 
 .top {
 	background-image: url("http://designlobby.co.uk/assets/img/masthead-park.jpg");
@@ -66,4 +76,14 @@
 	background-color: white;
 	color: black;
 	border: 2px solid darkorange;
+}
+
+.description {
+	font-size: 26px;
+	padding-left: 26px;
+	padding-right: 26px;
+}
+
+.description span {
+	color: darkorange;
 }

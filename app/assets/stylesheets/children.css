@@ -1,0 +1,15 @@
+
+.child-image img {
+	width: 330px;
+	height: auto;
+	display: inline;
+}
+
+.child-image {
+	display: inline-block;
+}
+
+
+.child-index-heading {
+	display: inline-block;
+}
