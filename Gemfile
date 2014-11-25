@@ -28,10 +28,6 @@ gem 'spring',        group: :development
 gem 'rails_12factor', group: :production
 
 
-group :development, :test do
-  gem 'sqlite3'
-end
-
 gem 'bcrypt'
 gem 'foundation-rails'
 gem 'geocoder'
