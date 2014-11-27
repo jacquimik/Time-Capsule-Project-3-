@@ -6,19 +6,11 @@
 	padding: 50px;
 }
 
-.top-bar-section li:not(.has-form) a:not(.button) {
-	/*background-color: transparent;*/
-}
 
 .top:hover{
     filter: none;
     -webkit-filter: grayscale(0%);
 }
-
-.top-bar {
-	/*background-color: transparent;*/
-}
-
 
 footer {
 	height: 150px; 
