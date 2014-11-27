@@ -2,8 +2,9 @@
 
 
 <div class="child-index-heading">
-  <h2>View all children</h2>
-  <p>Keep track your children's special moments!</p>
+  <h2>Children</h2>
+  <p>Keep track of your children's special moments!</p>
+</div></br><br>
 		<div class="child-index">
 			<% @children.each do |child| %>
     		<div class="child_box">
@@ -24,8 +25,10 @@
 </div>
 
 <br>
-<%= link_to 'Create New Child', new_child_path %>
+<div class="child-button">
+<%= link_to 'Create New Child', new_child_path, :class => 'button' %>
 
 
 
 
+</div>

@@ -17,13 +17,37 @@
 .child_box {
 	display: inline-block;
 	position: relative;
-	padding: 40px;
+	padding: 0px;
 }
 
 .child_box img {
-	height: 200px;
+	height: 250px;
 }
 
-.show-child {
-	display: inline;
+.child-index-heading {
+	height: 150px;
+	width: 100%;
+/*	background-color: #F9F6E9;*/
+}
+
+.child-index-heading h2 {
+	font-family: 'Roboto Slab';
+	font-size: 60px;
+}
+
+.child-index-heading p {
+	font-family: 'Roboto Slab';
+	font-size: 30px;
+}
+
+.child-button {
+	text-align: center;
+}
+
+.childd img {
+	width: 350px;
+}
+
+.childd h1 {
+	font-family: 'Roboto Slab';
 }

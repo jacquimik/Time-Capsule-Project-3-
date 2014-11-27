@@ -1,10 +1,12 @@
+
+<div class="childd">
 <h1><%= @child.firstname %> <%= @child.middlename %> <%= @child.lastname %></h1>
-  <p>Gender: <%= @child.gender %></p>
-  <p>Date of Birth: <%= @child.date_of_birth.strftime '%B %m %Y'%></p>
-  <p>Eye Color: <%= @child.eye_color %></p>
+  <p><b>Gender:</b> <%= @child.gender %></p>
+  <p><b>Date of Birth: </b><%= @child.date_of_birth.strftime '%B %m %Y'%></p>
+  <p><b>Eye Color: </b><%= @child.eye_color %></p>
   <p><%= image_tag @child.image %></p>
 
-
+</div>
 
 
 <!--  -->

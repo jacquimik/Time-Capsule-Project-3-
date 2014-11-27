@@ -25,16 +25,16 @@
     <%= f.date_field :date_of_birth %>
   
     <%= f.label :gender %>
-    <%= f.text_field :gender %>
-   form
+    <%= f.collection_select(:gender, Child::GENDERS, :value, :text ) %>
+
     <%= f.label :eye_color %>
-    <%= f.text_field :eye_color %><br>
+    <%= f.collection_select(:eye_color, Child::EYES, :value, :text ) %>
 
     <%= f.label :image %>
     <%= f.text_field :image %><br>
     
     <label>
-      <%= f.submit%>
+      <%= f.submit :class => 'button' %>
     </label>
   <% end %>
 </div>

@@ -28,8 +28,8 @@ RSpec.describe UsersController, :type => :controller do
         expect(User.count).to eq(1)
       end
 
-      it 'should redirect to dashboard_path if successfully signed up' do
-        expect(response).to redirect_to(dashboard_path)
+      it 'should redirect to children_path if successfully signed up' do
+        expect(response).to redirect_to(children_path)
       end
     end
 

@@ -1,19 +1,13 @@
-<h2>Events </h2> 
 
-<% @events.each do |event| %> 
-  <table>
-		<tr>
-			<th>Name</th>
-			<td><%=event.name %></td>
-		</tr>
-    <tr>
-      <th>View</th>
-      <td><%= link_to 'View Event', [@child, event] %></td>
-      <td><%#= image_tag @child, event.image %></td>
-      <td><%= event.date.strftime '%B %m %Y' %></td>
-    </tr>
-  </table>
+<h2>Events </h2> 
+  <div class="index-each">
+    <% @events.each do |event| %> 
+      Name: <%=event.name %><br>
+      <%= event.date.strftime '%B %m %Y' %><br>
+      <%= image_tag event.image %><br><br>
+    <%= link_to 'View Event', [@child, event], :class => "button" %><br>
+  </div>
 <% end %>
 
 <%= link_to 'New Event', new_child_event_path(@child), :class => "button" %>
-
+  

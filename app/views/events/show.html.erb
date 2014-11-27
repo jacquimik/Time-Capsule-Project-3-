@@ -1,21 +1,24 @@
+<div class="event-show">
 <h1><%= @event["name"] %></h1>
-
-
-
 
 	<div class="event-info">
 		<div class="large-6 columns">
-			<p>Date: <%= @event.date.strftime '%B %m %Y' %></p>
-			<p>Location: <%= @event.location %></p>
-			<p>description <%= @event.description %></p>
-			<p><%= image_tag @event.image %></p>
+			<p><b>Date: </b><%= @event.date.strftime '%B %m %Y' %></p>
+			<p><b>Location: </b><%= @event.location %></p>
+			<p><b>Description </b><%= @event.description %></p>
+			<div class="event-image">
+				<p><%= image_tag @event.image %></p>
+			</div>
 		</div>
 
 		<div class="large-6 columns">
-			<p><%= image_tag "http://maps.google.com/maps/api/staticmap?size=450x300&sensor=false&zoom=16&markers=#{@event.latitude}%2C#{@event.longitude}" %><p>
+			<div class="google-map"><p><%= image_tag "http://maps.google.com/maps/api/staticmap?size=450x300&sensor=false&zoom=16&markers=#{@event.latitude}%2C#{@event.longitude}" %><p>
+			</div>
 		</div>
 	</div>
+<div class="event-button">
+<%= link_to 'Edit Event', edit_child_event_path, :class => 'button' %><br>
+<%= link_to 'Back to events', child_events_path(@child), :class => 'button' %>
+</div>
 
-<%= link_to 'Back to events', child_events_path(@child) %>
-
-
+</div>

@@ -17,7 +17,17 @@ class Child < ActiveRecord::Base
 	belongs_to :user
 
 	has_many :events
+	GENDERS = [
+		OpenStruct.new(value: "Male", text: "Male"),
+		OpenStruct.new(value: "Female", text: "Female")
+	]
 
+	EYES = [
+		OpenStruct.new(value: "Blue", text: "Blue"),
+		OpenStruct.new(value: "Green", text: "Green"),
+		OpenStruct.new(value: "Brown", text: "Brown"),
+		OpenStruct.new(value: "Hazel", text: "Hazel")
+	]
 	validates :gender, inclusion: { in: %w(Female Male) }
 	validates :eye_color, inclusion: { in: %w(Blue Green Hazel Brown) }
 

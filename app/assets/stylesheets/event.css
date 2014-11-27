@@ -1,0 +1,25 @@
+.event-index {
+	display: inline;
+}
+
+.index-each {
+	display: inline;
+}
+
+.events-yo {
+	display: inline;
+}
+
+.event-image img {
+	width: 350px;
+	height: auto;
+}
+
+.event-show h1{
+	font-family: 'Roboto Slab';
+	font-size: 50px;
+}
+
+.event-button {
+	display: inline-block;
+}
