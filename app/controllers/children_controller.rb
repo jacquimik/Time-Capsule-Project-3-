@@ -5,7 +5,7 @@ class ChildrenController < ApplicationController
 
 	def create
 		@child = Child.new child_params
-		@child.user_id = @current_user
+		@child.user_id = @current_user.id
 
 		if @child.save
 			redirect_to @child
@@ -29,7 +29,7 @@ class ChildrenController < ApplicationController
 	end
 
 	def index
-		@children = Child.all
+		@children = @current_user.children
 	end
 
 	def show
