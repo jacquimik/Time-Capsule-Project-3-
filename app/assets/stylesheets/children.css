@@ -13,3 +13,17 @@
 .child-index-heading {
 	display: inline-block;
 }
+
+.child_box {
+	display: inline-block;
+	position: relative;
+	padding: 40px;
+}
+
+.child_box img {
+	height: 200px;
+}
+
+.show-child {
+	display: inline;
+}

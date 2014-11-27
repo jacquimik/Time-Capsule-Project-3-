@@ -1,19 +1,21 @@
-<h2>
-	<%# binding.pry %>
-	<p>
-		  <%= @event["name"] %>
-	</p>
-
-	<p>
-		   <%= @event["date"] %>
-	</p>
-
-	<p>
-  <%= @event["location"] %>	</p>
+<h1><%= @event["name"] %></h1>
 
 
-<%= image_tag "http://maps.google.com/maps/api/staticmap?size=450x300&sensor=false&zoom=16&markers=#{@event.latitude}%2C#{@event.longitude}" %>
 
-</h2>
+
+	<div class="event-info">
+		<div class="large-6 columns">
+			<p>Date: <%= @event.date.strftime '%B %m %Y' %></p>
+			<p>Location: <%= @event.location %></p>
+			<p>description <%= @event.description %></p>
+			<p><%= image_tag @event.image %></p>
+		</div>
+
+		<div class="large-6 columns">
+			<p><%= image_tag "http://maps.google.com/maps/api/staticmap?size=450x300&sensor=false&zoom=16&markers=#{@event.latitude}%2C#{@event.longitude}" %><p>
+		</div>
+	</div>
 
 <%= link_to 'Back to events', child_events_path(@child) %>
+
+

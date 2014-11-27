@@ -1,28 +1,30 @@
 
-<%= link_to 'Create New Child', new_child_path %>
 
 
 <div class="child-index-heading">
   <h2>View all children</h2>
-  <p>Stay on trend with the latest looks from Sydney Sister</p>
+  <p>Keep track your children's special moments!</p>
 		<div class="child-index">
-		  <ul>
-		    <li>
-					<% @children.each do |child| %>
-		    		<div class="child_box">
-		        	<%= image_tag child.image %>
-		      		<h4><%= link_to child.firstname, child_path(child) %></h4>
-		      		<p class="child-info">
-		        		<%= child.firstname %></br>
-		        		<%= child.lastname %>
-	       		
-	       		</p>
-	      	</div>
-	      <% end %>
-	    </li>
-	  </ul>
+			<% @children.each do |child| %>
+    		<div class="child_box">
+        	<%= image_tag child.image %>
+      		<h4><%= link_to child.firstname, child_path(child) %></h4>
+      		<p class="child-info">
+        		Name: <%= child.firstname %>
+        		<%= child.middlename %>
+        		<%= child.lastname %><br>
+        		Date of Birth: <%= child.date_of_birth.strftime '%B %m %Y' %><br>
+        		Gender: <%= child.gender %><br>
+        		Eye Color: <%= child.eye_color %><br>
+            
+       		</p>
+      	</div>
+      <% end %>
 	</div>
 </div>
+
+<br>
+<%= link_to 'Create New Child', new_child_path %>
 
 
 

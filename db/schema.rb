@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141121005606) do
+ActiveRecord::Schema.define(version: 20141126112113) do
 
   create_table "attachments", force: true do |t|
     t.string  "name"
@@ -28,6 +28,8 @@ ActiveRecord::Schema.define(version: 20141121005606) do
     t.string   "eye_color"
     t.text     "image"
     t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "events", force: true do |t|
@@ -39,6 +41,8 @@ ActiveRecord::Schema.define(version: 20141121005606) do
     t.integer  "child_id"
     t.float    "longitude"
     t.float    "latitude"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "users", force: true do |t|
