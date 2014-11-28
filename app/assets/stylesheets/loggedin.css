@@ -20,7 +20,6 @@
   font-size: emCalc(14px);
 }
 .path-container .path-item .circle {
-  background-color: #ccc;
   background-size: 156px 156px;
   border-radius: 50%;
   width: 156px;
@@ -40,10 +39,10 @@
   width: 2px;
   bottom: 0;
   position: absolute;
-  top: 243px;
+  top: 250px;
   left: 50%;
   z-index: 0;
-  height: 1164px;
+  height: 1053px;
 }
 
 /*------------------------------------

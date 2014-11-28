@@ -1,13 +1,17 @@
-
-<h2>Events </h2> 
-  <div class="index-each">
-    <% @events.each do |event| %> 
-      Name: <%=event.name %><br>
-      <%= event.date.strftime '%B %m %Y' %><br>
-      <%= image_tag event.image %><br><br>
-    <%= link_to 'View Event', [@child, event], :class => "button" %><br>
-  </div>
-<% end %>
-
-<%= link_to 'New Event', new_child_event_path(@child), :class => "button" %>
-  
+<div class="event-index-heading">
+  <h2>Events </h2> 
+    <div class="event-index">
+      <% @events.each do |event| %> 
+        <div class="event-box">
+          <b>Name:</b> <%=event.name %><br>
+          <b>Date: </b> <%= event.date.strftime '%B %m %Y' %><br>
+          <%= image_tag event.image %><br><br>
+          <div class="button-view">
+            <%= link_to 'View Event', [@child, event], :class => "button" %>
+          </div>
+        </div>
+      <% end %>
+      </div>
+    </div>
+  <%= link_to 'New Event', new_child_event_path(@child), :class => "button" %>
+</div>

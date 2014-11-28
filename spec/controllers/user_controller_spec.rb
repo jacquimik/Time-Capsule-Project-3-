@@ -21,7 +21,7 @@ RSpec.describe UsersController, :type => :controller do
   describe 'POST to create' do
     describe 'a user with valid information' do
       before do
-        post :create, { :user => { :name => 'Annie', :email => 'annie@annie.com', :password => 'annie' } }
+        post :create, { :user => { :email => 'j.mikulasev.com', :password => 'jacqui' } }
       end
 
       it 'should create a user' do
@@ -35,7 +35,7 @@ RSpec.describe UsersController, :type => :controller do
 
     describe 'a user with invalid information' do
       before do
-        post :create, { :user => { :name => 'Annie', :email => 'annie@annie.com', :password => '' } }
+        post :create, { :user => { :email => 'j.mikulasev.com', :password => '' } }
       end
 
       it 'should create a user with invalid details' do

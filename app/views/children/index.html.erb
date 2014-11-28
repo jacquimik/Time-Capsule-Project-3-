@@ -5,30 +5,27 @@
   <h2>Children</h2>
   <p>Keep track of your children's special moments!</p>
 </div></br><br>
-		<div class="child-index">
-			<% @children.each do |child| %>
-    		<div class="child_box">
-        	<%= image_tag child.image %>
+	<div class="child-index">
+		<% @children.each do |child| %>
+    	<div class="child_box">
+        <%= image_tag child.image %>
       		<h4><%= link_to child.firstname, child_path(child) %></h4>
-      		<p class="child-info">
+      		  <p class="child-info">
         		Name: <%= child.firstname %>
         		<%= child.middlename %>
         		<%= child.lastname %><br>
         		Date of Birth: <%= child.date_of_birth.strftime '%B %m %Y' %><br>
         		Gender: <%= child.gender %><br>
         		Eye Color: <%= child.eye_color %><br>
-            
-       		</p>
+     		 </p>
       	</div>
       <% end %>
-	</div>
+	   </div>
+    <%# end %>
+  </div>
 </div>
 
 <br>
 <div class="child-button">
-<%= link_to 'Create New Child', new_child_path, :class => 'button' %>
-
-
-
-
+  <%= link_to 'Create New Child', new_child_path, :class => 'button' %>
 </div>
