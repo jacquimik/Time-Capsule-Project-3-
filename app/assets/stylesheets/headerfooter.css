@@ -2,6 +2,27 @@
 	max-width: 100%;
 }
 
+a {
+	color: darkorange;
+}
+
+.top-bar {
+	background-color: black;
+}
+
+a:hover {
+	color: orange;
+}
+
+.top-bar-section li:not(.has-form) a:not(.button) {
+	background-color: black;
+}
+
+.top-bar-section li:not(.has-form) a:not(.button):hover {
+	background-color: black;
+	color: orange;
+}
+
 .path-container {
 	padding: 50px;
 }
