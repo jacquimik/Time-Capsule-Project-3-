@@ -1,4 +1,4 @@
-.row {
+	.row {
 	max-width: 100%;
 }
 
@@ -20,13 +20,13 @@ footer {
 	text-align: center;
 }
 
-.1st-col {
+/*.1st-col {
 	padding-top: 500px;
 }
 
 .2nd-col {
 	padding-top: 500px;
-}
+}*/
 
 .large-6 {
 	padding-top: 50px;
