@@ -1,30 +1,4 @@
-/*.event-index {
-	display: inline;
-}
 
-.index-each {
-	display: inline;
-}
-
-.events-yo {
-	display: inline;
-}
-
-.event-image img {
-	width: 350px;
-	height: auto;
-}
-
-.event-show h1{
-	font-family: 'Roboto Slab';
-	font-size: 50px;
-}
-
-.event-button {
-	display: inline-block;
-}
-
-*/
 .slide {
 	width: 310px;
 	height: 230px;
@@ -35,25 +9,6 @@
 	background: url(http://dummyimage.com/310x230) no-repeat top center;
 }
 
-/*.slide div {
-    width: 250px;
-    height: 100px;
-    padding: 0;
-    display: none; 
-    position: absolute;
-    bottom: 0px;
-    background-color: rgba(0, 0, 0, 0.5);
-    border:1px solid red;
-    bottom: 14px;
-    left:30px;
-}*/
-
-/*.event-image img {
-	width: 330px;
-	height: auto;
-	display: inline;
-}
-*/
 .event-image {
 	display: inline;
 }

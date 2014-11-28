@@ -5,6 +5,4 @@ $(document).ready(function(){
     },function(){
         $(this).parent("div").find("div").slideUp("slow");    
     });
- 
-    
-});
+	});
