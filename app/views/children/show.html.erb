@@ -5,8 +5,9 @@
   <p><b>Date of Birth: </b><%= @child.date_of_birth.strftime '%B %m %Y'%></p>
   <p><b>Eye Color: </b><%= @child.eye_color %></p>
   <p><%= image_tag @child.image %></p>
-</div>
 
-<%= link_to 'Show Events', child_events_path(@child), :class => "button show-child" %>
-<%= link_to 'Create New Event', new_child_event_path(@child), :class => "button show-child" %>
-<%= link_to 'Child Profile', edit_child_path, :class => "button show-child" %>
+  <%= link_to 'Show Events', child_events_path(@child), :class => "button show-child" %>
+	<%= link_to 'Create New Event', new_child_event_path(@child), :class => "button show-child" %>
+	<%= link_to 'Child Profile', edit_child_path, :class => "button show-child" %>
+
+</div>

@@ -27,6 +27,7 @@
 .child-index-heading {
 	height: 150px;
 	width: 100%;
+	padding-bottom: 150px;
 /*	background-color: #F9F6E9;*/
 }
 
@@ -52,3 +53,10 @@
 	font-family: 'Roboto Slab';
 }
 
+.childd {
+	padding-bottom: 200px;
+}
+
+.child-index {
+	padding-bottom: 180px;
+}

@@ -14,9 +14,11 @@
 		<div class="large-6 columns">
 			<div class="google-map"><p><%= image_tag "http://maps.google.com/maps/api/staticmap?size=450x300&sensor=false&zoom=16&markers=#{@event.latitude}%2C#{@event.longitude}" %><p>
 			</div>
+						<%= link_to 'Edit Event', edit_child_event_path, :class => 'button' %><br>
+			<%= link_to 'Back to events', child_events_path(@child), :class => 'button' %>
 		</div>
+
 	</div>
-	<%= link_to 'Edit Event', edit_child_event_path, :class => 'button' %><br>
-	<%= link_to 'Back to events', child_events_path(@child), :class => 'button' %>
+
 
 </div>

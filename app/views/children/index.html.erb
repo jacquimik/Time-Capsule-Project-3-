@@ -17,15 +17,15 @@
         		Date of Birth: <%= child.date_of_birth.strftime '%B %m %Y' %><br>
         		Gender: <%= child.gender %><br>
         		Eye Color: <%= child.eye_color %><br>
+            </div>
           </p>
       	 </div>
       <% end %>
+       <div class="child-button">
+              <%= link_to 'Create New Child', new_child_path, :class => 'button' %>
 	   </div>
   </div>
 </div>
 
 <br>
 
-<div class="child-button">
-  <%= link_to 'Create New Child', new_child_path, :class => 'button' %>
-</div>

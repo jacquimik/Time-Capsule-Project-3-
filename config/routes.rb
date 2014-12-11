@@ -45,23 +45,16 @@
 #
 
 Rails.application.routes.draw do
-  
   root :to => 'pages#home'
 
   resources :users, except: [:index]
-  
   resources :children do
     resources :events
   end
 
   resources :attachments
-
   resource :session, only: [:new, :create, :destroy]
   
-  # get '/login' => 'sessions#new'
-  # post '/login' => 'sessions#create'
-  # delete '/login' => 'sessions#destroy'
-
   get '/about' => 'pages#about'
   get '/faq' => 'pages#faq'
   get '/loggedin' => 'pages#loggedin'
